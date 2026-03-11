@@ -1,0 +1,163 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Contacto | Estudio Petrizzo</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0a47c2", // Deep Navy Base
+                        "accent-gold": "#D4AF37", // Request gold accent
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+
+<!-- Desktop Navigation Bar -->
+<header class="hidden md:flex sticky top-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-primary/10 px-8 py-4 items-center justify-between">
+    <a href="index.html" class="flex items-center gap-3 w-auto xl:w-1/4">
+        <img src="logo.png" alt="Estudio Petrizzo Logo" class="h-10 md:h-12 w-auto object-contain">
+        <span class="text-xl font-bold text-primary dark:text-white hidden lg:block">Estudio Petrizzo</span>
+    </a>
+    <nav class="flex gap-8 flex-1 justify-center">
+        <a href="index.html" class="font-bold text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-accent-gold transition-colors text-sm lg:text-base">Inicio</a>
+        <a href="servicios.html" class="font-bold text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-accent-gold transition-colors text-sm lg:text-base">Servicios</a>
+        <a href="ubicacion.html" class="font-bold text-slate-600 hover:text-primary dark:text-slate-300 dark:hover:text-accent-gold transition-colors text-sm lg:text-base">Ubicación</a>
+        <a href="contacto.html" class="font-bold text-primary dark:text-accent-gold transition-colors text-sm lg:text-base">Contacto</a>
+    </nav>
+    <div class="w-auto xl:w-1/4 flex justify-end items-center">
+        <div class="hidden lg:flex flex-col border border-slate-200 dark:border-slate-700 rounded-lg px-3 py-1.5 mr-3 bg-slate-50 dark:bg-slate-800/50">
+            <a href="https://wa.me/5491133842312" target="_blank" class="text-[11px] font-bold text-slate-700 dark:text-slate-300 hover:text-primary transition-colors flex items-center gap-1.5 leading-tight">
+                <i class="fa-brands fa-whatsapp text-[#25D366]"></i> 11-3384-2312
+            </a>
+            <a href="mailto:estudiopetrizzo@gmail.com" class="text-[10px] text-slate-500 hover:text-primary transition-colors flex items-center gap-1.5 leading-tight">
+                <span class="material-symbols-outlined text-[12px]">mail</span> estudiopetrizzo@gmail.com
+            </a>
+        </div>
+        <a href="contacto.html" class="hidden md:flex items-center justify-center rounded-lg h-10 px-4 xl:px-6 bg-primary text-white font-bold hover:bg-primary/90 transition-colors text-sm gap-2 whitespace-nowrap">
+            <span class="material-symbols-outlined text-sm">chat</span> <span class="hidden xl:inline">Consultar Ahora</span><span class="xl:hidden">Consultar</span>
+        </a>
+    </div>
+</header>
+
+<main class="flex-1">
+<section class="bg-primary/5 py-16 px-6 md:py-24">
+<div class="max-w-7xl mx-auto mb-10">
+<h1 class="text-3xl md:text-5xl font-bold text-primary dark:text-white mb-6 text-center" style="">Un Legado de Confianza</h1>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-slate-600 dark:text-slate-400 md:text-xl text-justify">
+<p>Con décadas de trayectoria ininterrumpida, nacimos en Turdera con el firme compromiso de brindar calidez humana en cada gestión, tratando cada caso con la dedicación que cada contribuyente merece.</p>
+<p>Para nosotros, usted no es un cliente mas. Es un vecino, un emprendedor o una empresa que confía su futuro en nuestras manos. Desde el sur de la provincia extendemos nuestros servicios hasta la Capital Federal para todo aquel que precise de nuestros servicios.&nbsp;</p>
+</div>
+</div>
+<div id="contacto" class="bg-white dark:bg-slate-900 rounded-2xl p-8 shadow-xl border border-primary/10 max-w-4xl mx-auto">
+<h3 class="text-2xl font-bold text-primary mb-8 flex items-center justify-center gap-2" style="">
+<span class="material-symbols-outlined text-accent-gold" style="">mail</span> Contáctenos
+</h3>
+<form class="space-y-6" action="https://formsubmit.co/estudiopetrizzo@gmail.com" method="POST">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="space-y-4">
+        <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Nombre Completo</label>
+            <input name="nombre" class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 focus:ring-primary focus:border-primary" placeholder="Ej: Juan Pérez" type="text" required>
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Teléfono de contacto</label>
+            <input name="telefono" class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 focus:ring-primary focus:border-primary" placeholder="Ej: +54 11 1234 5678" type="tel" required>
+        </div>
+        <div>
+            <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Correo Electrónico</label>
+            <input name="email" class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 focus:ring-primary focus:border-primary" placeholder="email@ejemplo.com" type="email" required>
+        </div>
+    </div>
+    <div class="flex flex-col">
+        <label class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">Consulta</label>
+        <textarea name="consulta" class="w-full flex-1 rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 focus:ring-primary focus:border-primary min-h-[150px]" placeholder="¿En qué podemos ayudarle?" required></textarea>
+    </div>
+</div>
+<div class="flex justify-end">
+    <button class="w-auto px-10 bg-primary text-white font-bold h-12 rounded-lg hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20" type="submit">
+        Enviar Mensaje
+    </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<footer class="bg-primary pt-12 pb-24 px-6 text-white border-t border-accent-gold/20">
+<div class="flex flex-col gap-8 max-w-5xl mx-auto">
+<div>
+<h4 class="text-xl font-bold mb-4 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-accent-gold" style="">account_balance</span>
+                        Estudio Petrizzo
+                    </h4>
+<p class="text-slate-300 text-sm leading-relaxed max-w-xs" style="">
+                        Brindamos soluciones integrales en Zona Sur de Gran Buenos Aires y CABA. Su tranquilidad es nuestra prioridad.
+                    </p>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h5 class="font-bold text-accent-gold mb-3 uppercase text-xs tracking-widest" style="">Servicios</h5>
+<ul class="text-sm space-y-2 text-slate-300">
+<li class="" style=""><a href="servicios.html" class="hover:text-accent-gold transition-colors">Contables</a></li>
+<li class="" style=""><a href="servicios.html" class="hover:text-accent-gold transition-colors">Impositivos</a></li>
+<li class="" style=""><a href="servicios.html" class="hover:text-accent-gold transition-colors">Liquidación de Sueldos</a></li>
+<li class="" style=""><a href="servicios.html" class="hover:text-accent-gold transition-colors">Consultoría</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-accent-gold mb-3 uppercase text-xs tracking-widest" style="">Contacto</h5>
+<ul class="text-sm space-y-2 text-slate-300">
+<li class="" style=""><a href="ubicacion.html" class="hover:text-accent-gold transition-colors">Miguel de Azcuénaga 267, Turdera, Lomas de Zamora</a></li>
+<li><a href="https://wa.me/5491133842312" target="_blank" class="hover:text-white transition-colors">WhatsApp: 11-3384-2312</a></li>
+<li><a href="mailto:estudiopetrizzo@gmail.com" class="hover:text-white transition-colors">Email: estudiopetrizzo@gmail.com</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 text-center text-xs text-slate-400">
+<p class="" style="">© 2026 Estudio Petrizzo. Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+
+<!-- Botón Flotante de WhatsApp -->
+<a href="https://wa.me/5491133842312" target="_blank" class="fixed bottom-24 right-4 md:right-8 md:bottom-28 z-[60] bg-[#25D366] text-white rounded-full w-[60px] h-[60px] flex items-center justify-center text-3xl shadow-[0_4px_10px_rgba(0,0,0,0.3)] hover:scale-110 hover:-translate-y-1 transition-all duration-300">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<nav class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-primary/10 px-4 pb-6 pt-3 flex justify-around md:hidden">
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="index.html" style="">
+<span class="material-symbols-outlined !text-2xl" style="">home</span>
+<span class="text-[10px] font-bold uppercase" style="">Inicio</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="servicios.html" style="">
+<span class="material-symbols-outlined !text-2xl" style="">cases</span>
+<span class="text-[10px] font-bold uppercase" style="">Servicios</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500 hover:text-primary transition-colors" href="ubicacion.html" style="">
+<span class="material-symbols-outlined !text-2xl" style="">location_on</span>
+<span class="text-[10px] font-bold uppercase" style="">Ubicacion</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="contacto.html" style="">
+<span class="material-symbols-outlined !text-2xl" style="">mail</span>
+<span class="text-[10px] font-bold uppercase" style="">Contacto</span>
+</a>
+</nav>
+</div>
+</body></html>
